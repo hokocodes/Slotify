@@ -1,0 +1,4 @@
+=== slotifyhokole Config Vars
+CLEARDB_DATABASE_URL: mysql://bde1900971353c:2b4ac360@us-cdbr-east-05.cleardb.net/heroku_d347ebb2241490f?reconnect=true
+CLEARDB_SILVER_URL:   mysql://bec57c6b4aad29:be63bcef@us-cdbr-east-05.cleardb.net/heroku_f2c0481bfb086d6?reconnect=true
+CLEARDB_WHITE_URL:    mysql://b6b98224f045f4:49ff1831@us-cdbr-east-05.cleardb.net/heroku_654c6ec551df5b1?reconnect=true

@@ -1,12 +1,10 @@
 <?php
-	ob_start();
-	session_start();
+$url = parse_url(getenv("mysql://bde1900971353c:2b4ac360@us-cdbr-east-05.cleardb.net/heroku_d347ebb2241490f?reconnect=true"));
 
-	$timezone = date_default_timezone_set("America/Chicago");
+$server = $url["us-cdbr-east-05.cleardb.net"];
+$username = $url["bde1900971353c"];
+$password = $url["2b4ac360"];
+$db = substr($url["heroku_d347ebb2241490f"], 1);
 
-	$con = mysqli_connect("localhost", "root", "", "slotify");
-
-	if(mysqli_connect_errno()) {
-		echo "Failed to connect: " . mysqli_connect_errno();
-	}
+$conn = new mysqli($server, $username, $password, $db);
 ?>
